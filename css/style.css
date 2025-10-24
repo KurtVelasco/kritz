@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url("/images/background/bg.webp");
+    background-image: url("../images/background/bg.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;   
