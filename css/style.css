@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("/images/background/bg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
+
+}
+main {
+    padding: 2rem;
+    width: 100%;
+    margin-left: 60px;
+    transition: margin-left 0.3s;
+    flex: 1;
+}
+
+
+
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: transparent;
+}

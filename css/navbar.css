@@ -1,0 +1,59 @@
+@font-face {
+  font-family:'BA';
+  src: url('font/blue.woff2') format('woff2');
+}
+nav {
+    padding: 0.50rem 1.0rem;
+    width: 50%;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 100;
+    background-image: url(/images/ads/ad8.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'BA', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+nav a:hover {
+    color: #7581d4;
+}
+
+nav a svg {
+    width: 18px;
+    height: 18px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    height: 30px;
+    transform:translateY(-10%) scale(2); 
+    transform-origin: left center; 
+}
+.audio-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
