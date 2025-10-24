@@ -33,7 +33,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const spriteSheet = new Image();
-spriteSheet.src = "images/agnes.png";
+spriteSheet.src = "../images/agnes.png";
 let currentFrame = 0;
 let lastTime = 0;
 
@@ -121,7 +121,7 @@ function loop(time) {
 
 
 let isPlaying = false;
-const audio = new Audio('images/bakushin.mp3'); 
+const audio = new Audio('../images/bakushin.mp3'); 
 
   function togglePulse(element) {  
     if (isPlaying) {
