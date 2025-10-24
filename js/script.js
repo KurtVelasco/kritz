@@ -15,13 +15,12 @@ let currentIndex = 0;
 // setInterval(cycleNews, 1000);
 
 
-// === CONFIGURATION ===
 const Settings = {
   frameWidth: 300,
   frameHeight: 300,
   spriteColumn: 10,
   frameCount: 340,
-  frameDuration: 1000 / 30, // 60 FPS
+  frameDuration: 1000 / 30, 
   gravity: 0.6,
   bounce: 0.3,
 };
@@ -79,7 +78,6 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
 });
 
-// === ANIMATION LOOP ===
 function playAnimation(time) {
   if (time - lastTime > Settings.frameDuration) {
     const col = currentFrame % Settings.spriteColumn;
@@ -89,8 +87,6 @@ function playAnimation(time) {
     const sy = row * Settings.frameHeight;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Gravity effect only if not dragging
     if (!dragging) {
       velocityY += Settings.gravity;
       gremlinY += velocityY;
