@@ -7,7 +7,7 @@
     left: 0;
     top: 0;
     height: 100vh;
-    background-image: url(/images/background/sidebar.webp);
+    background-image: url(../images/background/sidebar.webp);
     width: 60px;
     transition: width 0.3s ease;
     overflow: hidden;
