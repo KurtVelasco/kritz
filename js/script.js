@@ -2,17 +2,17 @@ const newsItems = document.querySelectorAll('.news-item');
 let currentIndex = 0;
 
 // function cycleNews() {
-//     const current = newsItems[currentIndex];
-//     current.classList.add('exit');
-//     current.classList.remove('active');
-//     setTimeout(() => {
-//         current.classList.remove('exit');
-//         currentIndex = (currentIndex + 1) % newsItems.length;
-//         const next = newsItems[currentIndex];
-//         next.classList.add('active');
-//     }, 500);
+// const current = newsItems[currentIndex];
+// current.classList.add('exit');
+// current.classList.remove('active');
+// setTimeout(() => {
+//   current.classList.remove('exit');
+//     currentIndex = (currentIndex + 1) % newsItems.length;
+//     const next = newsItems[currentIndex];
+//     next.classList.add('active');
+// }, 500);
 // }
-// setInterval(cycleNews, 1000);
+//  setInterval(cycleNews, 1000);
 
 
 const Settings = {
@@ -20,7 +20,7 @@ const Settings = {
   frameHeight: 300,
   spriteColumn: 10,
   frameCount: 340,
-  frameDuration: 1000 / 30, 
+  frameDuration: 1000 / 30,
   gravity: 0.6,
   bounce: 0.3,
 };
@@ -65,7 +65,7 @@ canvas.addEventListener("mousemove", (e) => {
   if (dragging) {
     gremlinX = e.clientX - offsetX;
     gremlinY = e.clientY - offsetY;
-    velocityY = 0; 
+    velocityY = 0;
   }
 });
 
@@ -117,9 +117,9 @@ function loop(time) {
 
 
 let isPlaying = false;
-const audio = new Audio('./images/bakushin.mp3'); 
+const audio = new Audio('./images/bakushin.mp3');
 
-  function togglePulse(element) {  
+  function togglePulse(element) {
     if (isPlaying) {
       audio.pause();
     } else {

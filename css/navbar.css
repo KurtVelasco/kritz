@@ -8,7 +8,7 @@ nav {
     border-radius: 0 0 10px 10px;
     position: relative;
     z-index: 100;
-    background-image: url(../images/ads/ad8.webp);
+    background-image: url(../images/background/navbar.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@ nav ul {
 
 nav a {
     font-family: 'BA', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
